@@ -1439,3 +1439,29 @@ body {
         transform: translateY(0);
     }
 }
+@media  screen and (min-width: 1000px){
+    .a-tel{
+        /* pointer-events: none; */
+        display: none;
+    }
+}
+.a-tel{
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 0 5px;
+    border: 1px solid #3AABD2;
+    border-radius: 4px;
+}
+.header-tel .a-tel{
+    color: white;
+}
+.about-content-div .a-tel{
+    color: black;
+}
+.a-tel img{
+    width: 15px;
+    display: inline-block;
+}
