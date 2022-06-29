@@ -10,6 +10,10 @@
     .sp-only{
         display: none;
     }    
+    .set-max{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
 p,h1,h2,h3,h4,h5,h6{
     margin-top: 12px;
@@ -282,7 +286,8 @@ body {
     /* height: 100%;
     width: auto;
     max-height: 350px; */
-    overflow: hidden;
+    overflow: hidden;    
+    height: 100%;
 }
 .lease-description{
     width: 50%;
@@ -575,7 +580,7 @@ body {
     padding: 12px 12px 0px 12px;
 }
 .eucal-theme2-content{
-    width: 23%;
+    width: 23.5%;
     border: 4px solid #009139;
     border-radius: 12px;
     background-color: white;
@@ -699,7 +704,7 @@ body {
 }
 .loan-table{
     border-collapse:  collapse;
-    width: 80%;
+    width: 95%;
     margin: 12px auto;
 }
 .loan-table th,.loan-table td {
@@ -735,6 +740,7 @@ body {
     border-radius: 48px;
     height: 48px;
     padding: 2px;
+    max-width: 700px;
 }
 .loan-strong a{
     display: block;
@@ -1410,5 +1416,24 @@ body {
     }
     .header-nav .nav-hover:hover .header-nav-child, .header-nav .nav-hover:active .header-nav-child {
         opacity: 1;
+    }
+}
+.fadeUpTrigger{
+    opacity: 0;
+}
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+@keyframes fadeUpAnime{
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
