@@ -1379,6 +1379,7 @@ body {
         line-height: 1.75;
         background-color: rgba(34, 23, 20, 0.8);
         opacity: 0;
+        list-style: none;
     }
     .header-nav .nav-hover:hover .header-nav-child{
         opacity: 1;
@@ -1413,6 +1414,7 @@ body {
         background-color: rgba(34, 23, 20, 0.8);
         margin-left: 1px;
         opacity: 0;
+        list-style: none;
     }
     .header-nav .nav-hover:hover .header-nav-child, .header-nav .nav-hover:active .header-nav-child {
         opacity: 1;
