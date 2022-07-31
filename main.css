@@ -1465,3 +1465,44 @@ body {
     width: 15px;
     display: inline-block;
 }
+.top-image{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    /* transition: all 0.5s ease; */
+    /* max-width: 0%;
+    max-height: 50%; */
+}
+.top-image-div > .active{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    /* overflow: hidden; */
+    opacity: 1;
+    transition: opacity .5s ease;
+}
+.top-image-selector{
+    display: flex;
+    justify-content: center;
+}
+.top-image-selector .top-image-selector-item{
+    display: inline-block;
+    margin: 6px 10px;
+    cursor: pointer;
+}
+.top-image-iframe{
+    margin: 0 auto;
+    display: block;
+}
+/* @media screen and (max-width: 999px) { */
+    .top-image-iframe{
+        max-width: 100%;
+        height: auto;
+        /* margin: 6px auto; */
+        aspect-ratio: 16 / 9;
+    }
+/* } */
+.top-image-selector > a.active{
+    color: white;
+}

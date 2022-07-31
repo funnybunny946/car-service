@@ -36,3 +36,47 @@ function fadeAnime(){
 $(window).scroll(function (){
     fadeAnime();/* アニメーション用の関数を呼ぶ*/
 });// ここまで画面をスクロールをしたら動かしたい場合の記述
+
+// window.addEventListener('DOMContentLoaded',function() {
+//     this.document.getElementById('top-image-item1').addClass('active');
+// });
+function handleClickItem1(){
+    $('#top-image-item1').addClass('active');
+    $('#top-image-item2').removeClass('active');
+    $('#top-image-item3').removeClass('active');
+    $('#top-image-item4').removeClass('active');
+    $('#top-image-selector-item1').addClass('active');
+    $('#top-image-selector-item2').removeClass('active');
+    $('#top-image-selector-item3').removeClass('active');
+    $('#top-image-selector-item4').removeClass('active');
+}
+function handleClickItem2(){
+    $('#top-image-item1').removeClass('active');
+    $('#top-image-item2').addClass('active');
+    $('#top-image-item3').removeClass('active');
+    $('#top-image-item4').removeClass('active');
+    $('#top-image-selector-item1').removeClass('active');
+    $('#top-image-selector-item2').addClass('active');
+    $('#top-image-selector-item3').removeClass('active');
+    $('#top-image-selector-item4').removeClass('active');
+}
+function handleClickItem3(){
+    $('#top-image-item1').removeClass('active');
+    $('#top-image-item2').removeClass('active');
+    $('#top-image-item3').addClass('active');
+    $('#top-image-item4').removeClass('active');
+    $('#top-image-selector-item1').removeClass('active');
+    $('#top-image-selector-item2').removeClass('active');
+    $('#top-image-selector-item3').addClass('active');
+    $('#top-image-selector-item4').removeClass('active');
+}
+function handleClickItem4(){
+    $('#top-image-item1').removeClass('active');
+    $('#top-image-item2').removeClass('active');
+    $('#top-image-item3').removeClass('active');
+    $('#top-image-item4').addClass('active');
+    $('#top-image-selector-item1').removeClass('active');
+    $('#top-image-selector-item2').removeClass('active');
+    $('#top-image-selector-item3').removeClass('active');
+    $('#top-image-selector-item4').addClass('active');
+}

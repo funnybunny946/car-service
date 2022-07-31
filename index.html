@@ -71,7 +71,18 @@
             <div class="top-div">
                 <div class="top-contents">
                     <div class="top-image-div">
-                        <img class="top-image" src="./img/top.png" alt="(株)カーサービス釧路"></img>
+                        <img id="top-image-item1" class="top-image active" src="./img/top.png" alt="(株)カーサービス釧路"></img>
+                        <img id="top-image-item2" class="top-image" src="./img/top2.png" alt="(株)カーサービス釧路"></img>
+                        <img id="top-image-item3" class="top-image" src="./img/top3.png" alt="(株)カーサービス釧路"></img>
+                        <div id="top-image-item4" class="top-image">
+                            <iframe class="top-image-iframe" width="1120" height="630" src="https://www.youtube.com/embed/cM51vHeujuY" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="top-image-selector">
+                            <a id="top-image-selector-item1" class="top-image-selector-item active" onclick="handleClickItem1()">●</a>
+                            <a id="top-image-selector-item2" class="top-image-selector-item" onclick="handleClickItem2()">●</a>
+                            <a id="top-image-selector-item3" class="top-image-selector-item" onclick="handleClickItem3()">●</a>
+                            <a id="top-image-selector-item4" class="top-image-selector-item" onclick="handleClickItem4()">●</a>
+                        </div>
                     </div>
                     <div class="top-side">
                         <div class="top-side-container">
