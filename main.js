@@ -41,6 +41,7 @@ $(window).scroll(function (){
 //     this.document.getElementById('top-image-item1').addClass('active');
 // });
 function handleClickItem1(){
+    this.pause();
     $('#top-image-item1').addClass('active');
     $('#top-image-item2').removeClass('active');
     $('#top-image-item3').removeClass('active');
@@ -51,6 +52,7 @@ function handleClickItem1(){
     $('#top-image-selector-item4').removeClass('active');
 }
 function handleClickItem2(){
+    this.pause();
     $('#top-image-item1').removeClass('active');
     $('#top-image-item2').addClass('active');
     $('#top-image-item3').removeClass('active');
@@ -61,6 +63,7 @@ function handleClickItem2(){
     $('#top-image-selector-item4').removeClass('active');
 }
 function handleClickItem3(){
+    this.pause();
     $('#top-image-item1').removeClass('active');
     $('#top-image-item2').removeClass('active');
     $('#top-image-item3').addClass('active');
@@ -79,4 +82,17 @@ function handleClickItem4(){
     $('#top-image-selector-item2').removeClass('active');
     $('#top-image-selector-item3').removeClass('active');
     $('#top-image-selector-item4').addClass('active');
+}
+
+
+function pause(){
+    const ytiframe= 'movieIframe';
+    //iframeで表示しているwindowオブジェクトを取得
+    const targetWindow = document.getElementById(ytiframe).contentWindow;
+
+    //APIのコマンドを送信する関数
+    const ag2ytControl = function(action,arg=null){
+      targetWindow.postMessage('{"event":"command", "func":"'+action+'", "args":'+arg+'}', '*');
+    };
+    ag2ytControl('pauseVideo');
 }
